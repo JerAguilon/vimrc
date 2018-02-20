@@ -9,7 +9,8 @@ set rtp+=/usr/local/opt/fzf
 map <leader>j  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 " pylint for python
-let g:syntastic_python_checkers = ['pylint']
+" Uncomment to use
+" let g:syntastic_python_checkers = ['pylint']
 
 " Augmenting Ag command using fzf#vim#with_preview function
 "   * fzf#vim#with_preview([[options], preview window, [toggle keys...]])
