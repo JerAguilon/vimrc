@@ -5,8 +5,11 @@ highlight ColorColumn ctermbg=0 guibg=lightgrey
 " fzf for fuzzy search in vim
 set rtp+=/usr/local/opt/fzf
 
-
+" Jump for python
 map <leader>j  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
+" pylint for python
+let g:syntastic_python_checkers = ['pylint']
 
 " Augmenting Ag command using fzf#vim#with_preview function
 "   * fzf#vim#with_preview([[options], preview window, [toggle keys...]])
