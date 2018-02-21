@@ -12,6 +12,11 @@ map <leader>j  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 " Uncomment to use
 " let g:syntastic_python_checkers = ['python']
 
+
+" Auto mirror nerd tree
+autocmd BufWinEnter * NERDTreeMirror
+
+
 " Augmenting Ag command using fzf#vim#with_preview function
 "   * fzf#vim#with_preview([[options], preview window, [toggle keys...]])
 "     * For syntax-highlighting, Ruby and any of the following tools are required:
