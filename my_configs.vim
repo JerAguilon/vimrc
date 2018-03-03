@@ -16,6 +16,9 @@ map <leader>j  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 " Auto mirror nerd tree
 autocmd BufWinEnter * NERDTreeMirror
 
+" Enable stripping by default
+let g:better_whitespace_enabled=1
+let g:strip_whitespace_on_save=1
 
 " Augmenting Ag command using fzf#vim#with_preview function
 "   * fzf#vim#with_preview([[options], preview window, [toggle keys...]])
